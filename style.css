@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    background: #fff;
+    line-height: 1.6;
+}
+h1, h2, h3 {
+    margin: 0.5em 0;
+    font-weight: 600;
+}
+a { color: #2388c7; }
+img { max-width: 100%; height: auto; display: block; }
+
+.hero {
+    background: linear-gradient(120deg, #ee7851 0%, #edebd0 100%);
+    color: #222;
+    text-align: center;
+    padding: 3em 1em 2em 1em;
+    position: relative;
+}
+.logo {
+    width: 100px;
+    margin: 0 auto 1em auto;
+    display: block;
+}
+.hero h1 {
+    font-size: 2.2em;
+    letter-spacing: 2px;
+}
+
+/* About Section */
+.about {
+    padding: 2em 1em;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Product Teasers */
+.products {
+    background: #f7f7f7;
+    padding: 2em 1em;
+}
+.products h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    justify-content: center;
+}
+.product {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(120,200,190,0.08);
+    padding: 1em;
+    max-width: 250px;
+    text-align: center;
+    flex: 1 1 220px;
+}
+.product img {
+    border-radius: 8px;
+    margin-bottom: 0.7em;
+}
+
+/* Contact Form */
+.contact {
+    padding: 2em 1em;
+    max-width: 480px;
+    margin: 0 auto;
+}
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.contact label {
+    font-weight: 500;
+}
+.contact input,
+.contact textarea {
+    padding: 0.6em;
+    border: 1px solid #b5b5b5;
+    border-radius: 5px;
+    font-size: 1em;
+}
+.contact textarea {
+    min-height: px;
+    resize: vertical;
+}
+.contact button {
+    background: #ef3131;
+    color: #222;
+    border: none;
+    padding: 0.7em;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.contact button:hover {
+    background: #22a6b3;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background: #f4b954;
+    color: #222;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 1em;
+    margin-top: 2em;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .product-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product {
+        max-width: 90vw;
+    }
+}
+@media (max-width: 480px) {
+    .hero {
+        padding: 2em 0.5em 1em 0.5em;
+    }
+    .hero h1 {
+        font-size: 1.5em;
+    }
+    .about, .products, .contact {
+        padding: 1.2em 0.5em;
+    }
+    .product-list {
+        gap: 1em;
+    }
+    .contact {
+        padding: 1.2em 0.5em;
+    }
+}
